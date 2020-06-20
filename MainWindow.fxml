@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal"
+          fx:controller="com.clinic.royan.Controller" >
+    <padding>
+        <Insets right="10" left="10" top="10"/>
+    </padding>
+
+    <Label text="Welcome to Royan Clinic Administration!" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2"
+           style="-fx-font-size: 20; -fx-font-family: 'Cooper Black';" prefWidth="Infinity"/>
+    <Label fx:id="lblUserName" GridPane.rowIndex="1" GridPane.columnIndex="0" text="User Name: "/>
+    <Label fx:id="lblPassword" GridPane.rowIndex="2" GridPane.columnIndex="0" text="Password: "/>
+    <TextField fx:id="txtUserName" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <PasswordField fx:id="pwd_Password" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Button text="Login" fx:id="btnLogin" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2"
+    prefWidth="Infinity" GridPane.rowSpan="2" prefHeight="Infinity" onAction="#btnLoginAction">
+
+    </Button>
+
+    <padding>
+        <Insets bottom="30" right="10" left="10"/>
+    </padding>
+
+</GridPane>
